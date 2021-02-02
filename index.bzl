@@ -34,7 +34,10 @@ load("//internal/node:npm_package_bin.bzl", _npm_bin = "npm_package_bin")
 load("//internal/npm_install:npm_install.bzl", _npm_install = "npm_install", _yarn_install = "yarn_install")
 load("//internal/pkg_npm:pkg_npm.bzl", _pkg_npm = "pkg_npm_macro")
 load("//internal/pkg_web:pkg_web.bzl", _pkg_web = "pkg_web")
+load("//packages/concatjs:index.bzl", _karma_web_test = "karma_web_test", _karma_web_test_suite = "karma_web_test_suite")
 
+karma_web_test = _karma_web_test
+karma_web_test_suite = _karma_web_test_suite
 check_bazel_version = _check_bazel_version
 nodejs_binary = _nodejs_binary
 nodejs_test = _nodejs_test
