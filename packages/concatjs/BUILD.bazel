@@ -19,6 +19,8 @@ load("@build_bazel_rules_nodejs//packages/typescript:index.bzl", "ts_project")
 load("@build_bazel_rules_nodejs//tools/stardoc:index.bzl", "stardoc")
 load("//third_party/github.com/bazelbuild/bazel-skylib:rules/copy_file.bzl", "copy_file")
 
+package(default_visibility = ["//visibility:public"])
+
 ts_project(
     name = "bazel_concatjs_lib",
     srcs = glob(["*.ts"]),
