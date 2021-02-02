@@ -1,1 +1,3 @@
 # Marker file that this directory is a bazel package
+
+package(default_visibility = ["//visibility:public"])
